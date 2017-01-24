@@ -1,0 +1,26 @@
+---
+# Remember, leave a key empty if there is no value.  None will be a string,
+# not a Python "NoneType"
+client:
+  hosts:
+    - 07eb516c75a27e412eed02473bdc9766.us-east-1.aws.found.io
+  port: 9243
+  url_prefix:
+  use_ssl: True
+  certificate:
+  client_cert:
+  client_key:
+  aws_key:
+  aws_secret_key:
+  aws_region:
+  ssl_no_validate: False
+  http_auth: beater:password
+  timeout: 30
+  master_only: False
+
+logging:
+  loglevel: INFO
+  logfile:
+  logformat: default
+  blacklist: ['elasticsearch', 'urllib3']
+

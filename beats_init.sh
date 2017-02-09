@@ -17,3 +17,6 @@ for SVC in metricbeat filebeat logstash; do
 	sudo service $SVC start
 done
 
+sudo mv /etc/metricbeat/metricbeat.yml /etc/metricbeat/metricbeat.yml.old
+sudo ln -s /etc/metricbeat/metricbeat.yml ~/flybeat/metricbeat.yml
+
